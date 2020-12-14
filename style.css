@@ -2,6 +2,11 @@
     z-index:-1;position:relative;
 }
 
+body, html {
+    height:100%;
+    width:100%;
+    margin: 0;
+}
 
 
 #logo {
@@ -9,6 +14,15 @@
     width: 50%;
 } 
 
-#app {
+/* #app {
     background-image: url("bg.svg");
-}
+} */
+
+#app {
+    background-image: radial-gradient(rgba(255,255,0,.4), rgba(255,0,255,.4)), url('bg.svg') ;
+    background-size: 100%, 6%;
+    background-position: top left, 0 0;
+    background-repeat: no-repeat, repeat;
+    width: 100%;
+    height:100%;
+  }
