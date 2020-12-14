@@ -1,0 +1,14 @@
+#app div{
+    z-index:-1;position:relative;
+}
+
+
+
+#logo {
+    margin: 0 auto;
+    width: 50%;
+} 
+
+#app {
+    background-image: url("bg.svg");
+}
