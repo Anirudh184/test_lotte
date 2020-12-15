@@ -1,15 +1,469 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(ANDROMEDA_500.TTF);
+  }
+
 body, html {
+    font-family: myFirstFont !important;
     height:100%;
     width:100%;
     margin: 0;
 }
 
-
+/* 
 #logo {
     margin: 0 auto;
     width: 50%;
-}  
+}   */
 
 #main {
-    position: fixed;
+    /* position: fixed; */
+}
+
+.bg{
+    position: absolute;
+}
+.logo{
+    position: absolute;
+    bottom: 72%;
+    width: 31%;
+    left: 33%;
+}
+.cs{
+    position: absolute;
+    bottom: 10%;
+    width: 20%;
+    left: 39%;
+}
+
+
+.timer{
+    position: absolute !important;
+    bottom: 42%!important;
+    left: 28%!important;
+    margin: 0!important;
+    padding: 0!important;
+    display: flex!important;
+}
+
+.timer li p {
+    color:  white !important;
+    padding: 10px 5px 3px 5px;
+    margin: 0 !important;
+    font-size: 15px !important;
+}
+
+.timer li{
+    margin-right: 56px;
+    background: #1C0C93;
+    padding: 0 6px 0 2px;
+    width: 90px;
+    border: 1px solid #1C0C93;
+    border-radius: 10px;
+    color: white !important;
+}
+.timer li span{
+line-height: 48px !important;
+}
+
+.normal-text{
+    font-size: 12px !important;
+    color: white;
+}
+/* 
+@media (min-width:320px)  { 
+    .timer{
+        transform: scale(0.4);
+        left: -28%!important;
+        }
+ }
+@media (min-width:481px)  {
+    .timer{
+        transform: scale(0.4);
+        left: -28%!important;
+        }
+}
+@media (min-width:641px)  { 
+    .timer{
+        transform: scale(1);
+        left: 13%!important;
+    
+        }
+ } */
+
+
+
+
+ /*============================================================================== 
+    iPhone 4 and 4S || 320 x 480 || Default, Portrait and Landscape
+================================================================================ */
+@media only screen and (min-width: 320px) 
+and (max-width: 480px){
+    .timer{
+        transform: scale(0.3);
+        left: -51%!important;
+    
+        }
+}
+
+@media only screen and (min-width: 320px) 
+and (max-width: 480px) and (orientation: portrait) {
+    .timer{
+        transform: scale(0.3);
+        left: -51%!important;
+        }
+}
+
+@media only screen and (min-width: 320px) 
+and (max-width: 480px) and (orientation: landscape) {
+    .timer{
+        transform: scale(0.3);
+        left: -51%!important;
+    
+        }
+}
+
+/*============================================================================== 
+iPhone 5, 5S, 5C and 5SE || 320 x 568 || Default, Portrait and Landscape
+================================================================================ */
+@media only screen and (min-width: 320px) 
+and (max-width: 568px){
+    .timer{
+        transform: scale(0.3);
+        left: -51%!important;
+    
+        }
+}
+
+@media only screen and (min-width: 320px) 
+and (max-width: 568px) and (orientation: portrait) {
+    .timer{
+        transform: scale(0.3);
+        left: -51%!important;
+    
+        }
+}
+
+@media only screen and (min-width: 320px) 
+and (max-width: 568px) and (orientation: landscape) {
+    .timer{
+        transform: scale(0.3);
+        left: -51%!important;
+    
+        }
+}
+
+/*============================================================================== 
+iPhone 6, 6S, 7 and 8 || 375 x 667 || Default, Portrait and Landscape
+================================================================================ */
+@media only screen and (min-width: 375px) 
+and (max-width: 667px){ 
+    .timer{
+        transform: scale(1);
+        left: 13%!important;
+    
+        }
+}
+
+@media only screen and (min-width: 375px) 
+and (max-width: 667px) and (orientation: portrait) { 
+    .timer{
+        transform: scale(1);
+        left: 13%!important;
+    
+        }
+}
+
+@media only screen and (min-width: 375px) 
+and (max-width: 667px) and (orientation: landscape) { 
+    .timer{
+        transform: scale(1);
+        left: 13%!important;
+    
+        }
+}
+
+/*============================================================================== 
+iPhone 6+, 7+ and 8+ || 414 x 736 || Default, Portrait and Landscape
+================================================================================ */
+@media only screen and (min-width: 414px) 
+and (max-width: 736px){ 
+    .timer{
+        transform: scale(1);
+        left: 13%!important;
+    
+        }
+}
+
+@media only screen and (min-width: 414px) 
+and (max-width: 736px) and (orientation: portrait) { 
+    .timer{
+        transform: scale(1);
+        left: 13%!important;
+    
+        }
+}
+
+@media only screen and (min-width: 414px) 
+and (max-width: 736px) and (orientation: landscape) { 
+    .timer{
+        transform: scale(1);
+        left: 13%!important;
+    
+        }
+}
+
+/*============================================================================== 
+iPhone X || 375 x 812 || Default, Portrait and Landscape
+================================================================================ */
+@media only screen and (min-width: 375px) 
+and (max-width: 812px){ 
+    .timer{
+        transform: scale(1);
+        left: 13%!important;
+    
+        }
+}
+/* iphoneX */
+@media only screen and (min-width: 375px) 
+and (max-width: 812px) and (orientation: portrait) { 
+    .timer{
+        transform: scale(0.5);
+        left: -28%!important;
+    
+        }
+}
+
+@media only screen and (min-width: 375px) 
+and (max-width: 812px) and (orientation: landscape) { 
+    .timer{
+        transform: scale(1);
+        left: 13%!important;
+    
+        }
+}
+
+/*============================================================================== 
+Galaxy S3 || 320 x 640 || Default, Portrait and Landscape
+================================================================================ */
+@media screen and (width: 320px) 
+and (height: 640px){
+    .timer{
+        transform: scale(1);
+        left: 13%!important;
+    
+        }
+}
+
+@media screen and (width: 320px) 
+and (height: 640px) and (orientation: portrait) {
+    .timer{
+        transform: scale(1);
+        left: 13%!important;
+    
+        }
+}
+
+@media screen and (width: 320px) 
+and (height: 640px) and (orientation: landscape) {
+    .timer{
+        transform: scale(1);
+        left: 13%!important;
+    
+        }
+}
+
+/*============================================================================== 
+Windows Phone 480 x 800 Default, Portrait and Landscape
+================================================================================ */
+@media screen and (width: 480px) 
+and (height: 800px) {
+    .timer{
+        transform: scale(1);
+        left: 13%!important;
+    
+        }
+}
+
+@media screen and (width: 480px) 
+and (height: 800px) and (orientation: portrait) {
+    .timer{
+        transform: scale(1);
+        left: 13%!important;
+    
+        }
+}
+
+@media screen and (width: 480px) 
+and (height: 800px) and (orientation: landscape) {
+    .timer{
+        transform: scale(1);
+        left: 13%!important;
+    
+        }
+
+}
+
+/*============================================================================== 
+iPad 1, 2, Mini and Air || 768 x 1024 || Default, Portrait and Landscape
+================================================================================ */
+@media only screen and (min-width: 768px) 
+and (max-width: 1024px) {
+    .timer{
+        transform: scale(1);
+        left: 13%!important;
+    
+        }
+}
+
+@media only screen and (min-width: 768px) 
+and (max-width: 1024px) and (orientation: portrait) {
+    .timer{
+        transform: scale(1.3);
+        left: 23%!important;
+    
+        }
+}
+
+@media only screen and (min-width: 768px) 
+and (max-width: 1024px) and (orientation: landscape) {
+    .timer{
+        transform: scale(1);
+        left: 13%!important;
+    
+        }
+}
+
+
+/*============================================================================== 
+iPad Pro 10.5 || 834 x 1112 || Default, Portrait and Landscape
+================================================================================ */
+@media only screen and (min-width: 834px) 
+and (max-width: 1112px){
+}
+
+@media only screen and (min-width: 834px) 
+and (max-width: 834px) and (orientation: portrait) {
+}
+
+@media only screen and (min-width: 1112px) 
+and (max-width: 1112px) and (orientation: landscape) {
+    .timer li{
+        width: 90px;
+    }
+}
+
+
+/*============================================================================== 
+iPad Pro 12.9 || 1024 x 1366 || Default, Portrait and Landscape
+================================================================================ */
+@media only screen and (min-width: 1024px) 
+and (max-width: 1366px){
+    .timer li{
+        width: 90px;
+    }
+}
+
+@media only screen and (min-width: 1024px) 
+and (max-width: 1024px) and (orientation: portrait) {
+    .timer li{
+        width: 90px;
+    }
+}
+
+@media only screen and (min-width: 1366px) 
+and (max-width: 1366px) and (orientation: landscape) {
+    .timer li{
+        width: 90px;
+    }
+}
+
+
+/*============================================================================== 
+Galaxy Tab 2 || 800 x 1280 || Default, Portrait and Landscape
+================================================================================ */
+@media (min-width: 800px) and (max-width: 1280px) {
+}
+
+@media (max-width: 800px) and (orientation: portrait) { 
+}
+
+@media (max-width: 1280px) and (orientation: landscape) { 
+}
+
+/*============================================================================== 
+Nexus 7 || 601 x 906 || Default, Portrait and Landscape
+================================================================================ */
+@media screen and (width: 601px) 
+and (height: 906px){
+    .timer{
+        transform: scale(1);
+        left: 13%!important;
+    
+        }
+}
+
+@media screen and (width: 601px) 
+and (height: 906px) and (orientation: portrait) {
+    .timer{
+        transform: scale(1);
+        left: 13%!important;
+    
+        }
+}
+
+@media screen and (width: 601px) 
+and (height: 906px) and (orientation: landscape) {
+    .timer{
+        transform: scale(1);
+        left: 13%!important;
+    
+        }
+}
+
+/*============================================================================== 
+Nexus 9 || 1536 x 2048 || Default, Portrait and Landscape
+================================================================================ */
+@media screen and (width: 1536px) and (height: 2048px) {
+    .timer li{
+        width: 90px;
+    }
+}
+
+@media screen and (width: 1536px) 
+and (height: 2048px) and (orientation: portrait) {
+    .timer li{
+        width: 90px;
+    }
+}
+
+@media screen and (width: 1536px) 
+and (height: 2048px) and (orientation: landscape) {
+    .timer li{
+        width: 90px;
+    }
+}
+
+/*============================================================================== 
+Kindle Fire HD 8.9 || 1200 x 1600 || Default, Portrait and Landscape
+================================================================================ */
+@media only screen and (min-width: 1200px) 
+and (max-width: 1600px){
+}
+.timer li{
+    width: 90px;
+}
+
+@media only screen and (min-width: 1200px) 
+and (max-width: 1600px) and (orientation: portrait) {
+    .timer li{
+        width: 90px;
+    }
+}
+
+@media only screen and (min-width: 1200px) 
+and (max-width: 1600px) and (orientation: landscape) {
+    .timer li{
+        width: 90px;
+    }
 }
