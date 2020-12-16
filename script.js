@@ -33,20 +33,20 @@ function detectMob() {
         return navigator.userAgent.match(toMatchItem);
     });
 }
-  if(detectMob()){
-    bodymovin.loadAnimation({
-        container: document.getElementById('main'),
-        renderer: 'svg',
-        loop: true,
-        autoplay: true,
-        path: "mobile.json"
-    })
-  }else{
-    bodymovin.loadAnimation({
-        container: document.getElementById('main'),
-        renderer: 'svg',
-        loop: true,
-        autoplay: true,
-        path: "bg.json"
-    })
-  }
+//   if(detectMob()){
+//     bodymovin.loadAnimation({
+//         container: document.getElementById('main'),
+//         renderer: 'svg',
+//         loop: true,
+//         autoplay: true,
+//         path: "mobile.json"
+//     })
+//   }else{
+//     bodymovin.loadAnimation({
+//         container: document.getElementById('main'),
+//         renderer: 'svg',
+//         loop: true,
+//         autoplay: true,
+//         path: "bg.json"
+//     })
+//   }
